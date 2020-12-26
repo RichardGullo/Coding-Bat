@@ -1,0 +1,12 @@
+public int diff21(int n) {
+  
+  int difference = n - 21;
+  
+  if(difference < 0)
+    difference = Math.abs(difference);
+  
+  if(n > 21)
+  return 2*difference;
+  
+  return difference;
+}
