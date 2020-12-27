@@ -1,0 +1,17 @@
+public String notString(String str) {
+  
+  Integer index = str.indexOf("not");
+  
+  if(index == null)
+    return null;
+    
+  if(index == 0)
+    return str;
+  
+  StringBuilder sb = new StringBuilder();
+  sb.append("not ");
+  sb.append(str);
+  
+  return sb.toString();
+    
+}
