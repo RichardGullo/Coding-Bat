@@ -1,0 +1,12 @@
+public String delDel(String str) {
+  Integer index = str.indexOf("del");
+  
+  if(index == null || index != 1)
+    return str;
+    
+  if(str.length() < 5)
+    return str.substring(0,1);
+  else
+    return str.substring(0,1) + str.substring(4);
+  
+}
