@@ -1,0 +1,11 @@
+public int close10(int a, int b) {
+  int tenA = Math.abs(10-a);
+  int tenB = Math.abs(10-b);
+  
+  if(tenA == tenB)
+    return 0;
+  else if(tenA < tenB)
+    return a;
+  else
+    return b;
+}
