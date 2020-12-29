@@ -1,0 +1,15 @@
+public int max1020(int a, int b) {
+  boolean rangeA = a >= 10 && a <= 20;
+  boolean rangeB = b >= 10 && b <= 20;
+  
+  if(!rangeA && !rangeB)
+    return 0;
+  
+  if(rangeA && rangeB)
+    return Math.max(a,b);
+  
+  if(rangeA)
+    return a;
+  else
+    return b;
+}
