@@ -1,0 +1,11 @@
+public String everyNth(String str, int n) {
+  StringBuilder sb = new StringBuilder();
+  
+  for(int i = 1; i < str.length(); i++)
+  {
+    if(i%n==0)
+      sb.append(str.charAt(i));
+  }
+  
+  return str.charAt(0) + sb.toString();
+}
