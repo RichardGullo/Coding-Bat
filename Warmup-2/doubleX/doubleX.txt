@@ -1,0 +1,11 @@
+boolean doubleX(String str) {
+  Integer index = str.indexOf("x");
+  
+  if(index == null || index == str.length()-1)
+    return false;
+    
+  if(str.charAt(index+1) == 'x')
+    return true;
+    
+  return false;
+}
