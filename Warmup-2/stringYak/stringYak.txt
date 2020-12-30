@@ -1,0 +1,22 @@
+public String stringYak(String str) {
+  
+  String result = "";
+  
+  for(int i = 0; i < str.length(); i++)
+  {
+    int end = i + 3;
+    
+    if(end > str.length())
+    {
+      result += str.charAt(i);
+    } 
+    else if(str.charAt(i) == 'y' && str.charAt(i+2) == 'k')
+      i+=2;
+    else
+    result += str.charAt(i);
+  }
+  
+  return result;
+  
+  
+}
