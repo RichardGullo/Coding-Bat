@@ -1,0 +1,9 @@
+public String twoChar(String str, int index) {
+  
+  int end = index + 2;
+  
+  if(end>str.length() || index < 0)
+    return "" + str.charAt(0) + str.charAt(1);
+  else
+    return "" + str.charAt(index) + str.charAt(index+1);
+}
