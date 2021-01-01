@@ -1,0 +1,27 @@
+public boolean xyzThere(String str) {
+  
+  if(str.length() < 3)
+    return false;
+  
+  boolean valid = false;
+  
+  for(int i = 0; i < str.length()-2; i++)
+  {
+    if(str.charAt(i) == 'x' && str.charAt(i+1) == 'y' && str.charAt(i+2) == 'z')
+    {
+      valid = true;
+      
+      if(i != 0)
+      {
+        if(str.charAt(i-1) == '.')
+          valid = false;
+        else
+          valid = true;
+      }
+      
+    }
+  }
+  
+  return valid;
+  
+}
