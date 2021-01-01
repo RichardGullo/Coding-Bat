@@ -1,0 +1,13 @@
+public String getSandwich(String str) {
+  
+  int indexStart = -1;
+  int indexLast = -1;
+  
+  indexStart = str.indexOf("bread");
+  indexLast = str.lastIndexOf("bread");
+  
+  if(indexStart != -1 && indexLast != -1 && indexStart != indexLast)
+    return str.substring(indexStart+5, indexLast);
+  else
+    return "";
+}
