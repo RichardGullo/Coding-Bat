@@ -1,0 +1,21 @@
+public boolean xyzMiddle(String str) {
+  
+  int index = 0;
+  int temp = 0;
+  boolean valid = false;
+  
+  for(int i = 0; i < str.length()-2; i++)
+  {
+    if(str.charAt(i) == 'x' && str.charAt(i+1) == 'y' && str.charAt(i+2) == 'z')
+    {
+      int left = i- 0;
+      int right = (str.length()-1)-(i+2);
+      
+      valid = (Math.abs(left-right) <= 1) ? valid || true: valid || false;
+      
+    }
+  }
+  
+  return valid;
+  
+}
