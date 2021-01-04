@@ -1,0 +1,16 @@
+public String doubleChar(String str) {
+  
+        String k = "";
+        int length = str.length();
+        int i = 0;
+      
+        
+        while(i < length)
+        {
+            k = k + str.charAt(i) + str.charAt(i);
+            i++;
+        }
+        
+        return k;
+        
+}
