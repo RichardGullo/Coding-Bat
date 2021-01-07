@@ -1,0 +1,28 @@
+public String mixString(String a, String b) {
+  int i = 0;
+  int j = 0;
+  int length = a.length() + b.length();
+  
+  StringBuilder sb = new StringBuilder();
+  
+  for(int k = 0; k < length; k++)
+  {
+    if(k%2 == 0)
+    {
+      if(i < a.length())
+        sb.append(a.charAt(i++));
+      else
+        sb.append(b.charAt(j++));
+    }
+    else
+    {
+      if(j < b.length())
+        sb.append(b.charAt(j++));
+      else
+        sb.append(a.charAt(i++));
+    }
+  }
+  
+  return sb.toString();
+  
+}
