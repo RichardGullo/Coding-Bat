@@ -1,0 +1,23 @@
+  public boolean xyBalance(String str) {
+  HashMap<Character, Integer> map = new HashMap<>();
+  
+  map.put('x', -1);
+  map.put('y', -1);
+  
+  for(int i = 0; i < str.length(); i++)
+  {
+    if(str.charAt(i) == 'x' || str.charAt(i) == 'y')
+      map.put(str.charAt(i),i);
+  }
+  
+  int xIndex = map.get('x');
+  int yIndex = map.get('y');
+  
+  if(xIndex == -1 && yIndex == -1)
+    return true;
+    
+  if(xIndex > yIndex)
+    return false;
+    
+  return true;
+}
